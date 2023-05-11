@@ -1,4 +1,9 @@
-﻿namespace PrivateProtectedLib;
+﻿using System.Runtime.CompilerServices;
+
+// Si l'attribut est actif, les membres deviennent accessible dans PrivateProtectedDemo
+// [assembly:InternalsVisibleTo("PrivateProtectedDemo")]
+
+namespace PrivateProtectedLib;
 public class BaseClass
 {
     private protected int someField = 42;
